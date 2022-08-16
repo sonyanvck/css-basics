@@ -5,20 +5,60 @@
     <title>Home</title>
     <style>
       h1 {
-        color: purple;
+        color: hsla(240, 100%, 100%, .5);
       }
-
       p {
         color: red;
       }
-
       body {
         background-color: dodgerblue;
+      }
+      .purple-text {
+        color: rgba(0, 0, 255, .5);
+      }
+      .important {
+        font-weight: bold;
+      }
+      #lead-paragraph {
+        color: purple;
+        font-weight: bold;
+      }
+      .important:hover {
+        background-color: #0000ff;
+      }
+      a[href="https://weather.com/"]{
+        background-color: blue;
+        padding: 1rem;
+      }
+      a[href="https://komonews.com/"]{
+        background-color: orange;
+      }
+
+      h1 {
+        color: red;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+      }
+      p.important
+        width: 75%
+      }
+
+      img {
+        border-style: dashed;
+        border-color: orange;
+        border-width: 1px;
+        width: 30%;
       }
     </style>
   </head>
   <body>
     <h1>Welcome!</h1>
-    <p>Everything is fine!</p>
+    <p class="purple-text">Everything is fine!</p>
+    <p class="important purple-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p id="lead-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="https://weather.com/">Weather</a>
+    <a href="https://komonews.com/">Local News</a>
+    <img src="ferret.jpeg" alt="Close up of a cute ferret">
   </body>
 </html>
